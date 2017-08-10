@@ -23,7 +23,30 @@
       <div id="wrapper">
          <div id="main">
             <div class="inner">
-               <div class="image" id="image01"><img src="image01.JPG" alt="" /></div>
+               <!--<div class="image" id="image01"><img src="image03.JPG" alt="Jose Coria" /></div>-->
+               <script type="text/javascript">
+              <!--
+               var currentdate = 0;
+               var image_number = 0;
+               function ImageArray (n) {
+                 this.length = n;
+                 for (var i =1; i <= n; i++) {
+                   this[i] = ' '
+                 }
+               }
+               image = new ImageArray(4)
+               image[0] = 'image01.JPG'
+               image[1] = 'image02.JPG'
+               image[2] = 'image03.JPG'
+               image[3] = 'image04.JPG'
+               function randomimage() {
+                 currentdate = new Date()
+                 image_number = currentdate.getSeconds() % 4
+               	 return(image[image_number])
+               }
+               document.write("<div class=\"image\" id=\"image01\"><img src='" + randomimage()+ "'>");
+              //-->
+               </script>
                <h1 id="text01">Jose C. Coria</h1>
                <p id="text02">NDg0NTRjNGM0ZjJjMjA1NzRmNTI0YzQ0MjE=</p>
                <hr id="divider01" />
