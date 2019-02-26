@@ -39,9 +39,10 @@
                image[1] = './assets/images/coria02.JPG'
                image[2] = './assets/images/coria03.JPG'
                image[3] = './assets/images/coria04.JPG'
+               image[4] = './assets/images/coria05.JPG'
                function randomimage() {
                  currentdate = new Date()
-                 image_number = currentdate.getSeconds() % 4
+                 image_number = currentdate.getSeconds() % 5
                	 return(image[image_number])
                }
                document.write("<div class=\"image\" id=\"image01\"><img src='" + randomimage()+ "'>");
