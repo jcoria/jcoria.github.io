@@ -34,18 +34,16 @@
                    this[i] = ' '
                  }
                }
-               image = new ImageArray(8)
+               image = new ImageArray(6)
                image[0] = './assets/images/coria001.JPG'
                image[1] = './assets/images/coria002.JPG'
                image[2] = './assets/images/coria003.JPG'
                image[3] = './assets/images/coria004.JPG'
                image[4] = './assets/images/coria005.JPG'
                image[5] = './assets/images/coria006.JPG'
-               image[6] = './assets/images/coria007.JPG'
-               image[7] = './assets/images/coria008.JPG'
                function randomimage() {
                  currentdate = new Date()
-                 image_number = currentdate.getSeconds() % 8
+                 image_number = currentdate.getSeconds() % 5
                	 return(image[image_number])
                }
                document.write("<div class=\"image\" id=\"image01\"><img src='" + randomimage()+ "'>");
@@ -54,13 +52,13 @@
                <h1 id="text01">Jose C. Coria</h1>
                <p id="text02">NDg0NTRjNGM0ZjJjMjA1NzRmNTI0YzQ0MjE=</p>
                <hr id="divider01" />
-               <p id="text03">I&#39;m a computer science instructor based in Monterey Bay, California. I work at <a href="https://www.hartnell.edu/">Hartnell College</a>, where I teach in the computer science department.</p>
+               <p id="text03">I&#39;m a computer science instructor based in Monterey Bay, California. I teach at <a href="https://www.hartnell.edu/">Hartnell College</a> as a faculty member of the STEM division.</p>
                <ul class="icons" id="icons01">
                  <li><a class="icon icon-910 n01" target="_blank" href="https://www.instagram.com/josecoria/"><span class="label">instagram</span></a></li>
                  <li><a class="icon icon-90b n02" target="_blank" href="https://www.linkedin.com/in/josecoria"><span class="label">linkedin</span></a></li>
                  <li><a class="icon icon-903 n03" href="http://josecoria.com"><span class="label">here</span></a></li>
-                 <li><a class="icon icon-905 n05" target="_blank" href="https://twitter.com/jcoria"><span class="label">twitter</span></a></li>
-                 <li><a class="icon icon-901 n04" target="_blank" href="https://wapp1.hartnell.edu/hcdirectory/index2.cfm?alpha=coria"><span class="label">email-alt</span></a></li>               
+                 <li><a class="icon icon-905 n05" target="_blank" href="https://threads.net/josecoria"><span class="label">twitter</span></a></li>
+                 <li><a class="icon icon-901 n04" target="_blank" href="https://www.hartnell.edu/academics-affairs/academics/stem/math-science-engineering-faculty-staff.html"><span class="label">email-alt</span></a></li>               
                </ul>
             </div>
          </div>
