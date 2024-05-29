@@ -43,7 +43,7 @@
                image[5] = './assets/images/coria006.JPG'
                function randomimage() {
                  currentdate = new Date()
-                 image_number = currentdate.getSeconds() % 5
+                 image_number = currentdate.getSeconds() % 6
                	 return(image[image_number])
                }
                document.write("<div class=\"image\" id=\"image01\"><img src='" + randomimage()+ "'>");
